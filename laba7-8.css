@@ -1,0 +1,181 @@
+@media(max-width:719px){
+
+    .labels{
+        height:200px;
+    }
+    .sliderdiv{
+        display: none;
+    }
+    .mcard p,
+    .text p{
+        display: none;
+    }
+
+    .cartochka{
+        margin-top: 50px;
+    }
+    img{
+        width:90%;
+        height: 300px;
+    }
+    .mcard{
+        display: flex;
+        justify-content: center;
+    }
+    .contacts a::before{
+        content:'✉'
+    }
+    
+}
+
+@media(min-width:720px) and (max-width:1199px){
+    .sliderdiv{
+        display: none;
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cartochka{
+        width: 35%;
+        height: 35%;
+    }
+    .labels{
+        height:150px;
+    }
+    .mcard{
+        background-color: lightgreen;
+        padding:5px;
+        margin:5px;
+    }
+
+    .mcard p{
+        margin:5px 0 0 0;
+    }
+
+    .text{
+        display: none;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .contacts .license{
+        float:right;
+    }
+}
+.contacts a::before{
+    content:'✉'
+}
+
+
+@media(min-width:1200px){
+
+    .labels{
+        padding: 20px;
+        background-color: lightgreen;
+        border-radius: 5px;
+        margin:0 50px 0 0;
+        float:right;
+    }
+
+    .labels label{
+        border: 1px solid gray;
+        background-color: lightgray;
+    }
+    .sliderdiv *{
+        margin:0 0 23px 0;
+    }
+    .cartochka{
+        border-radius: 5px;
+        margin:15px;
+        background-color: lightgreen;
+        border: 1px solid lightgray;
+        width: 400px;
+        height: 200px;
+    }
+
+    .mcard{
+        height: 70%;
+        display: flex;
+        border: 1px solid lightgray;
+        padding: 5px;
+    }
+    .text{
+        margin: 5px;
+    }
+    img{
+        object-fit: cover;
+        margin: 0 10px 0 0;
+        width: 80%;
+        height: 100%;
+    }
+
+    .contacts{
+        width:100vw;
+        margin:100px 0 0 50px;
+    }
+    .license{
+        float:right;
+        margin: 0 65px 0 0;
+    }
+}
+
+.cartochka:hover{
+    box-shadow: 8px 10px 5px 2px lightgray;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+label{ 
+    background-color: lightgreen; 
+    padding: 15px; 
+    border-radius: 5px; 
+    width: 200px;
+    margin-top: 10px; 
+    text-align: center;
+}
+.labels{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+label:hover{
+    background-color: lightblue
+}
+
+.header{ 
+    height:50px; 
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size:50px;
+    
+}
+
+input[type="radio"]{ 
+    display: none; 
+}
+
+
+#sweet1:checked ~ div:not(.pirig),
+#sweet2:checked ~ div:not(.rulet),
+#sweet3:checked ~ div:not(.mlinci),
+#sweet4:checked ~ div:not(.zavarn),
+#sweet5:checked ~ div:not(.tort){
+    display:none;
+}
+#sweet6:checked ~ .main{
+    display: block;
+}
